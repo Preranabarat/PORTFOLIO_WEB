@@ -4,92 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <!-- <img src="images/logo.png" class="logo"> -->
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+<body class="bg-[#050505] text-white">
+    <div id="header" class="min-h-screen bg-[radial-gradient(circle_at_top_left,_rgba(255,0,79,0.24),_transparent_30%)]">
+        <div class="mx-auto max-w-6xl px-6 py-6 sm:px-8 lg:px-10">
+            <nav class="flex justify-center">
+                <ul class="flex flex-wrap justify-center gap-6 sm:gap-8">
+                    <li><a href="#" class="text-lg text-slate-200 transition hover:text-[#ff004f]">Home</a></li>
+                    <li><a href="#about" class="text-lg text-slate-200 transition hover:text-[#ff004f]">About</a></li>
+                    <li><a href="#services" class="text-lg text-slate-200 transition hover:text-[#ff004f]">Services</a></li>
+                    <li><a href="#" class="text-lg text-slate-200 transition hover:text-[#ff004f]">Portfolio</a></li>
+                    <li><a href="#" class="text-lg text-slate-200 transition hover:text-[#ff004f]">Contact</a></li>
                 </ul>
             </nav>
-            <div class="header-text">
-                <p>UI/UX Designer</p>
-                <h1>Hi, I'm <span>Prerana</span><br>Barat From India</h1>
-            </div>
-        </div>
-    </div>
-<!----------about---------->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/user.png" alt="Profile">
+
+            <div class="mt-24 grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
+                <div class="max-w-2xl">
+                    <p class="mb-4 text-lg text-slate-300">UI/UX Designer</p>
+                    <h1 class="text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">Hi, I'm <span class="text-[#ff004f]">Prerana</span><br>Barat From India</h1>
+                    <p class="mt-6 text-lg leading-8 text-slate-400">I create thoughtful digital experiences with modern interfaces, clear user flows, and a strong focus on details.</p>
                 </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo dolores ratione perferendis, consequatur culpa optio vero, neque commodi nihil qui quaerat molestiae earum officiis cum! Mollitia facilis voluptates accusamus neque.</p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                            <li><span>Web Development</span><br>Web app Development</li>
-                            <li><span>App Development</span><br>Building Android/iOS apps</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2025 - Current</span><br>Full Stack Web Development Design</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2025</span><br>I Am Graduate In BCA From ICIS College</li>
-                            <li><span>2022</span><br>Completed My 12th Board Examination</li>
-                            <li><span>2020</span><br>Completed My 10th Board Examination</li>
-                        </ul>
-                    </div>
+
+                <div class="relative overflow-hidden rounded-[2rem] shadow-2xl shadow-[#ff004f]/10">
+                    <img src="images/backgrownd.png" alt="Prerana profile photo" class="w-full rounded-[2rem] object-cover object-top sm:max-h-[620px]" />
                 </div>
             </div>
         </div>
     </div>
-<!----------services---------->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-sharp fa-solid fa-code"></i>
-                    <h2>Web DeSign</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate</p>
-                    <a href="#">Learn more</a>
+
+    <div id="about" class="border-t border-white/10 bg-[#0b0b0b] py-24">
+        <div class="mx-auto max-w-6xl px-6 sm:px-8 lg:px-10">
+            <div class="flex flex-wrap gap-10 lg:gap-16">
+                <div class="w-full lg:w-[35%]">
+                    <img src="images/2.jpg" alt="Prerana profile" class="w-full rounded-2xl border border-white/10 shadow-2xl shadow-[#ff004f]/20">
                 </div>
-                <div>
-                    <i class="fa-sharp fa-solid fa-crop"></i>
-                    <h2>UI/UX DeSign</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>App DeSign</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate</p>
-                    <a href="#">Learn more</a>
+                <div class="w-full lg:w-[55%]">
+                    <h1 class="text-4xl font-semibold text-white sm:text-5xl">About Me</h1>
+                    <p class="mt-6 text-lg leading-8 text-slate-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo dolores ratione perferendis, consequatur culpa optio vero, neque commodi nihil qui quaerat molestiae earum officiis cum! Mollitia facilis voluptates accusamus neque.</p>
+
+                    <div class="mt-8 flex flex-wrap gap-6">
+                        <p class="tab-links relative cursor-pointer text-lg font-medium text-slate-400 transition after:absolute after:bottom-[-8px] after:left-0 after:h-[3px] after:w-0 after:bg-[#ff004f] after:transition-all after:duration-500 hover:text-white" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links relative cursor-pointer text-lg font-medium text-slate-400 transition after:absolute after:bottom-[-8px] after:left-0 after:h-[3px] after:w-0 after:bg-[#ff004f] after:transition-all after:duration-500 hover:text-white" onclick="opentab('experience', event)">Experience</p>
+                        <p class="tab-links relative cursor-pointer text-lg font-medium text-slate-400 transition after:absolute after:bottom-[-8px] after:left-0 after:h-[3px] after:w-0 after:bg-[#ff004f] after:transition-all after:duration-500 hover:text-white" onclick="opentab('education', event)">Education</p>
+                    </div>
+
+                    <div class="tab-contents mt-4 block" id="skills">
+                        <ul class="space-y-3 text-slate-300">
+                            <li><span class="text-[#b5475a]">UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span class="text-[#b5475a]">Web Development</span><br>Web app Development</li>
+                            <li><span class="text-[#b5475a]">App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents mt-4 hidden" id="experience">
+                        <ul class="space-y-3 text-slate-300">
+                            <li><span class="text-[#b5475a]">2025 - Current</span><br>Full Stack Web Development Design</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents mt-4 hidden" id="education">
+                        <ul class="space-y-3 text-slate-300">
+                            <li><span class="text-[#b5475a]">2025</span><br>I Am Graduate In BCA From ICIS College</li>
+                            <li><span class="text-[#b5475a]">2022</span><br>Completed My 12th Board Examination</li>
+                            <li><span class="text-[#b5475a]">2020</span><br>Completed My 10th Board Examination</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-<script src="script.js"></script>
+
+    <div id="services" class="bg-[#080808] py-24">
+        <div class="mx-auto max-w-6xl px-6 sm:px-8 lg:px-10">
+            <h1 class="text-4xl font-semibold text-white sm:text-5xl">My Services</h1>
+            <div class="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+                <div class="rounded-2xl border border-white/10 bg-slate-900/80 p-8 shadow-lg shadow-black/30">
+                    <i class="fa-sharp fa-solid fa-code mb-6 text-4xl text-[#ff004f]"></i>
+                    <h2 class="text-2xl font-semibold">Web Design</h2>
+                    <p class="mt-3 text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate</p>
+                    <a href="#" class="mt-5 inline-block text-sm font-medium text-white transition hover:text-[#ff004f]">Learn more</a>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-slate-900/80 p-8 shadow-lg shadow-black/30">
+                    <i class="fa-sharp fa-solid fa-crop mb-6 text-4xl text-[#ff004f]"></i>
+                    <h2 class="text-2xl font-semibold">UI/UX Design</h2>
+                    <p class="mt-3 text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate</p>
+                    <a href="#" class="mt-5 inline-block text-sm font-medium text-white transition hover:text-[#ff004f]">Learn more</a>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-slate-900/80 p-8 shadow-lg shadow-black/30">
+                    <i class="fa-brands fa-app-store mb-6 text-4xl text-[#ff004f]"></i>
+                    <h2 class="text-2xl font-semibold">App Design</h2>
+                    <p class="mt-3 text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate</p>
+                    <a href="#" class="mt-5 inline-block text-sm font-medium text-white transition hover:text-[#ff004f]">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
