@@ -283,6 +283,16 @@ section .container {
     color: var(--muted);
     font-size: 0.82rem;
     font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.skill-tag:hover,
+.tag-list span:hover {
+    background: linear-gradient(135deg, rgba(255, 77, 141, 0.18), rgba(141, 232, 255, 0.1));
+    border-color: rgba(255, 77, 141, 0.4);
+    color: white;
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(255, 77, 141, 0.14);
 }
 
 .social-list {
@@ -324,18 +334,35 @@ section .container {
 
 .image-frame {
     position: relative;
-    border-radius: 36px;
+    width: min(440px, 100%);
+    aspect-ratio: 4 / 5;
+    border-radius: 32px;
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.12);
-    background: #0a1522;
+    background: linear-gradient(135deg, rgba(255, 77, 141, 0.12), rgba(141, 232, 255, 0.08));
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(255, 255, 255, 0.04);
+    transition: all 0.3s ease;
 }
 
-.image-frame img {
-    width: min(460px, 100%);
-    height: 620px;
+.profile-photo {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: center top;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.image-frame:hover,
+.image-frame:focus-within {
+    transform: scale(1.03);
+    box-shadow: 0 42px 70px rgba(0, 0, 0, 0.42), 0 0 28px rgba(255, 77, 141, 0.18);
+    border-color: rgba(255, 77, 141, 0.4);
+}
+
+.image-frame:hover .profile-photo,
+.image-frame:focus-within .profile-photo {
+    transform: scale(1.06);
 }
 
 .status-card {
@@ -533,9 +560,20 @@ section .container {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.5rem;
+    align-items: stretch;
+}
+
+.project-card-link {
+    display: block;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
 }
 
 .project-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     overflow: hidden;
     border-radius: 26px;
     background: rgba(15, 23, 42, 0.74);
@@ -551,9 +589,19 @@ section .container {
 }
 
 .project-thumb {
-    height: 190px;
-    background: linear-gradient(135deg, rgba(255,77,141,0.8), rgba(141,232,255,0.35));
+    height: 220px;
+    min-height: 220px;
+    width: 100%;
+    overflow: hidden;
+    background: #0f172a;
     position: relative;
+}
+
+.project-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .project-thumb::after {
@@ -563,6 +611,7 @@ section .container {
     border-radius: 18px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     background: rgba(5, 9, 17, 0.18);
+    pointer-events: none;
 }
 
 .thumb-one {
@@ -578,6 +627,9 @@ section .container {
 }
 
 .project-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     padding: 1.35rem 1.25rem 1.5rem;
 }
 
@@ -899,9 +951,20 @@ section .container {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.5rem;
+    align-items: stretch;
+}
+
+.project-card-link {
+    display: block;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
 }
 
 .project-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     overflow: hidden;
     border-radius: 26px;
     background: rgba(15, 23, 42, 0.74);
@@ -917,9 +980,19 @@ section .container {
 }
 
 .project-thumb {
-    height: 190px;
-    background: linear-gradient(135deg, rgba(255,77,141,0.8), rgba(141,232,255,0.35));
+    height: 220px;
+    min-height: 220px;
+    width: 100%;
+    overflow: hidden;
+    background: #0f172a;
     position: relative;
+}
+
+.project-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .project-thumb::after {
@@ -929,6 +1002,7 @@ section .container {
     border-radius: 18px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     background: rgba(5, 9, 17, 0.18);
+    pointer-events: none;
 }
 
 .thumb-one {
@@ -944,6 +1018,9 @@ section .container {
 }
 
 .project-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     padding: 1.35rem 1.25rem 1.5rem;
 }
 
@@ -1160,3 +1237,4 @@ section .container {
         height: 150px;
     }
 }
+
