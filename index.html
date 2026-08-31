@@ -28,136 +28,135 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-slate-950 text-slate-100 antialiased selection:bg-pink-400/30">
-    <header class="site-header">
-        <div class="nav-wrap">
-            <a href="#home" class="brand">P<span>B</span></a>
-            <button class="menu-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
+<body class="bg-[#040b14] text-white antialiased selection:bg-pink-400/30" style="font-family: 'Inter', sans-serif; margin: 0; min-height: 100vh; background: linear-gradient(180deg, #040b14 0%, #08121d 100%);">
+    <header class="sticky top-0 z-50 border-b border-white/10 bg-[#040b14]/70 backdrop-blur-[12px]">
+        <div class="relative mx-auto flex min-h-[74px] w-[min(1280px,calc(100%-32px))] items-center justify-between gap-4">
+            <a href="#home" class="mr-auto text-[1.8rem] font-extrabold tracking-[0.08em] text-white">P<span class="text-[#ff4d8d]">B</span></a>
+            <button data-menu-toggle class="inline-flex h-10 w-10 items-center justify-center rounded-[10px] border border-white/10 bg-transparent md:hidden" aria-label="Toggle navigation">
+                <span class="block h-[2px] w-[22px] rounded-full bg-white"></span>
+                <span class="my-[5px] block h-[2px] w-[22px] rounded-full bg-white"></span>
+                <span class="block h-[2px] w-[22px] rounded-full bg-white"></span>
             </button>
-            <nav class="site-nav">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#experience">Experience</a>
-                <a href="#contact">Contact</a>
+            <nav data-nav class="hidden items-center justify-center gap-6 md:flex md:flex-1">
+                <a href="#home" class="relative text-[0.96rem] font-medium text-[#b9c4d8] transition-colors duration-250 hover:text-white focus:text-white focus:outline-none focus:ring-2 focus:ring-sky-300 after:absolute after:-bottom-2 after:left-0 after:right-0 after:h-[2px] after:rounded-full after:bg-gradient-to-r after:from-[#ff4d8d] after:to-[#8de8ff] after:opacity-0 after:transition-opacity after:duration-250 hover:after:opacity-100 focus:after:opacity-100">Home</a>
+                <a href="#about" class="relative text-[0.96rem] font-medium text-[#b9c4d8] transition-colors duration-250 hover:text-white focus:text-white focus:outline-none focus:ring-2 focus:ring-sky-300 after:absolute after:-bottom-2 after:left-0 after:right-0 after:h-[2px] after:rounded-full after:bg-gradient-to-r after:from-[#ff4d8d] after:to-[#8de8ff] after:opacity-0 after:transition-opacity after:duration-250 hover:after:opacity-100 focus:after:opacity-100">About</a>
+                <a href="#skills" class="relative text-[0.96rem] font-medium text-[#b9c4d8] transition-colors duration-250 hover:text-white focus:text-white focus:outline-none focus:ring-2 focus:ring-sky-300 after:absolute after:-bottom-2 after:left-0 after:right-0 after:h-[2px] after:rounded-full after:bg-gradient-to-r after:from-[#ff4d8d] after:to-[#8de8ff] after:opacity-0 after:transition-opacity after:duration-250 hover:after:opacity-100 focus:after:opacity-100">Skills</a>
+                <a href="#projects" class="relative text-[0.96rem] font-medium text-[#b9c4d8] transition-colors duration-250 hover:text-white focus:text-white focus:outline-none focus:ring-2 focus:ring-sky-300 after:absolute after:-bottom-2 after:left-0 after:right-0 after:h-[2px] after:rounded-full after:bg-gradient-to-r after:from-[#ff4d8d] after:to-[#8de8ff] after:opacity-0 after:transition-opacity after:duration-250 hover:after:opacity-100 focus:after:opacity-100">Projects</a>
+                <a href="#experience" class="relative text-[0.96rem] font-medium text-[#b9c4d8] transition-colors duration-250 hover:text-white focus:text-white focus:outline-none focus:ring-2 focus:ring-sky-300 after:absolute after:-bottom-2 after:left-0 after:right-0 after:h-[2px] after:rounded-full after:bg-gradient-to-r after:from-[#ff4d8d] after:to-[#8de8ff] after:opacity-0 after:transition-opacity after:duration-250 hover:after:opacity-100 focus:after:opacity-100">Experience</a>
+                <a href="#contact" class="relative text-[0.96rem] font-medium text-[#b9c4d8] transition-colors duration-250 hover:text-white focus:text-white focus:outline-none focus:ring-2 focus:ring-sky-300 after:absolute after:-bottom-2 after:left-0 after:right-0 after:h-[2px] after:rounded-full after:bg-gradient-to-r after:from-[#ff4d8d] after:to-[#8de8ff] after:opacity-0 after:transition-opacity after:duration-250 hover:after:opacity-100 focus:after:opacity-100">Contact</a>
             </nav>
         </div>
     </header>
 
     <main id="home">
-        <section class="hero section-spacing">
-            <div class="container hero-grid">
-                <div class="reveal">
-                    <p class="eyebrow">Software Developer</p>
+        <section class="relative overflow-hidden py-[6rem]" style="background: radial-gradient(circle at top left, rgba(255, 0, 92, 0.24), transparent 30%), radial-gradient(circle at bottom right, rgba(141, 232, 255, 0.09), transparent 30%);">
+            <div class="mx-auto grid w-[min(1200px,calc(100%-32px))] items-center gap-12 lg:grid-cols-[1.15fr_0.85fr]">
+                <div class="reveal opacity-0 translate-y-[18px] transition duration-700">
+                    <p class="inline-flex items-center gap-2 text-[0.72rem] font-bold uppercase tracking-[0.12em] text-[#8de8ff]">Software Developer</p>
                     <h1 class="mt-4 text-4xl font-extrabold leading-none tracking-[-0.04em] sm:text-5xl lg:text-7xl">
-                        Hi, I'm <span class="text-accentPink">Prerana Barat</span><br />
+                        Hi, I'm <span class="text-[#ff4d8d]">Prerana Barat</span><br />
                         from Kolkata, India.
                     </h1>
-                    <p class="lead mt-6 max-w-2xl text-base text-slate-300">
+                    <p class="mt-6 max-w-2xl text-base leading-7 text-[#b9c4d8]">
                         Final-year Master of Computer Applications (MCA) student with a strong foundation in web technologies,
                         programming, and problem solving. I build clean, responsive, and practical digital experiences with a focus on user value.
                     </p>
 
-                    <div class="cta-row mt-8 flex flex-wrap gap-4">
-                        <a href="#projects" class="btn btn-primary">View Projects</a>
-                        <a href="mailto:preranabarat2004@gmail.com" class="btn btn-secondary">Hire Me</a>
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <a href="#projects" class="inline-flex min-h-[52px] items-center justify-center rounded-full border border-transparent bg-gradient-to-r from-[#ff4d8d] to-[#ff005c] px-6 font-semibold text-white shadow-[0_18px_30px_rgba(255,0,92,0.25)] transition-all duration-250 hover:-translate-y-[3px] hover:scale-[1.01] hover:shadow-[0_22px_34px_rgba(255,77,141,0.3)] focus:outline-none focus:ring-2 focus:ring-sky-300">View Projects</a>
+                        <a href="mailto:preranabarat2004@gmail.com" class="inline-flex min-h-[52px] items-center justify-center rounded-full border border-white/20 bg-transparent px-6 font-semibold text-white transition-all duration-250 hover:-translate-y-[3px] hover:scale-[1.01] hover:border-[#8de8ff]/40 hover:bg-[#8de8ff]/5 focus:outline-none focus:ring-2 focus:ring-sky-300">Hire Me</a>
                     </div>
 
-                    <div class="tech-stack-row mt-8 flex flex-wrap gap-3">
-                        <span class="skill-tag">HTML</span>
-                        <span class="skill-tag">CSS</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Java</span>
+                    <div class="mt-8 flex flex-wrap gap-3">
+                        <span class="inline-flex items-center justify-center rounded-full border border-white/10 bg-[rgba(15,23,42,0.52)] px-3 py-2 text-[0.82rem] font-semibold text-[#b9c4d8] transition-all duration-300 hover:-translate-y-[2px] hover:scale-[1.03] hover:border-[#ff4d8d]/40 hover:bg-[linear-gradient(135deg,rgba(255,77,141,0.18),rgba(141,232,255,0.1))] hover:text-white hover:shadow-[0_10px_20px_rgba(255,77,141,0.14)]">HTML</span>
+                        <span class="inline-flex items-center justify-center rounded-full border border-white/10 bg-[rgba(15,23,42,0.52)] px-3 py-2 text-[0.82rem] font-semibold text-[#b9c4d8] transition-all duration-300 hover:-translate-y-[2px] hover:scale-[1.03] hover:border-[#ff4d8d]/40 hover:bg-[linear-gradient(135deg,rgba(255,77,141,0.18),rgba(141,232,255,0.1))] hover:text-white hover:shadow-[0_10px_20px_rgba(255,77,141,0.14)]">CSS</span>
+                        <span class="inline-flex items-center justify-center rounded-full border border-white/10 bg-[rgba(15,23,42,0.52)] px-3 py-2 text-[0.82rem] font-semibold text-[#b9c4d8] transition-all duration-300 hover:-translate-y-[2px] hover:scale-[1.03] hover:border-[#ff4d8d]/40 hover:bg-[linear-gradient(135deg,rgba(255,77,141,0.18),rgba(141,232,255,0.1))] hover:text-white hover:shadow-[0_10px_20px_rgba(255,77,141,0.14)]">JavaScript</span>
+                        <span class="inline-flex items-center justify-center rounded-full border border-white/10 bg-[rgba(15,23,42,0.52)] px-3 py-2 text-[0.82rem] font-semibold text-[#b9c4d8] transition-all duration-300 hover:-translate-y-[2px] hover:scale-[1.03] hover:border-[#ff4d8d]/40 hover:bg-[linear-gradient(135deg,rgba(255,77,141,0.18),rgba(141,232,255,0.1))] hover:text-white hover:shadow-[0_10px_20px_rgba(255,77,141,0.14)]">Python</span>
+                        <span class="inline-flex items-center justify-center rounded-full border border-white/10 bg-[rgba(15,23,42,0.52)] px-3 py-2 text-[0.82rem] font-semibold text-[#b9c4d8] transition-all duration-300 hover:-translate-y-[2px] hover:scale-[1.03] hover:border-[#ff4d8d]/40 hover:bg-[linear-gradient(135deg,rgba(255,77,141,0.18),rgba(141,232,255,0.1))] hover:text-white hover:shadow-[0_10px_20px_rgba(255,77,141,0.14)]">Java</span>
                     </div>
 
-                    <ul class="social-list mt-8 flex items-center gap-3">
-                        <li><a href="https://www.linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                        <li><a href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
-                        <li><a href="mailto:preranabarat2004@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></li>
+                    <ul class="mt-8 flex list-none items-center gap-3 p-0">
+                        <li><a href="https://www.linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn" class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-[rgba(15,23,42,0.48)] text-white transition-all duration-300 hover:-translate-y-[3px] hover:rotate-4 hover:border-transparent hover:bg-gradient-to-r hover:from-[#ff4d8d] hover:to-[#ff005c] focus:outline-none focus:ring-2 focus:ring-sky-300"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub" class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-[rgba(15,23,42,0.48)] text-white transition-all duration-300 hover:-translate-y-[3px] hover:rotate-4 hover:border-transparent hover:bg-gradient-to-r hover:from-[#ff4d8d] hover:to-[#ff005c] focus:outline-none focus:ring-2 focus:ring-sky-300"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="mailto:preranabarat2004@gmail.com" aria-label="Email" class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-[rgba(15,23,42,0.48)] text-white transition-all duration-300 hover:-translate-y-[3px] hover:rotate-4 hover:border-transparent hover:bg-gradient-to-r hover:from-[#ff4d8d] hover:to-[#ff005c] focus:outline-none focus:ring-2 focus:ring-sky-300"><i class="fa-solid fa-envelope"></i></a></li>
                     </ul>
                 </div>
 
-                <div class="hero-visual reveal">
-                    <div class="image-frame">
-                        <img src="images/backgrownd.png" alt="Prerana Barat" class="profile-photo" />
+                <div class="reveal relative flex justify-center opacity-0 translate-y-[18px] transition duration-700">
+                    <div class="relative w-full max-w-[440px] overflow-hidden rounded-[32px] border border-white/10 bg-gradient-to-br from-pink-500/10 to-sky-300/5 shadow-[0_40px_60px_rgba(0,0,0,0.35)] transition-all duration-300 hover:scale-[1.03] hover:border-[#ff4d8d]/40 hover:shadow-[0_42px_70px_rgba(0,0,0,0.42)]">
+                        <img src="images/backgrownd.png" alt="Prerana Barat" class="h-[500px] w-full object-cover object-center transition duration-300 hover:scale-[1.06]" />
                     </div>
-                    <div class="status-card">
-                        <div class="status-dot"></div>
+                    <div class="absolute bottom-5 left-4 flex w-[min(240px,calc(100%-2rem))] items-center gap-3 rounded-[18px] border border-white/10 bg-[rgba(15,23,42,0.85)] p-3 shadow-[0_18px_30px_rgba(0,0,0,0.18)] backdrop-blur-[8px]">
+                        <span class="h-3 w-3 rounded-full bg-[#38d39f] shadow-[0_0_18px_rgba(56,211,159,0.9)]"></span>
                         <div>
-                            <strong class="text-white">Available for work</strong>
-                            <small>Web Development &amp; Python Projects</small>
+                            <strong class="block text-white">Available for work</strong>
+                            <small class="mt-1 block text-[#b9c4d8]">Web Development &amp; Python Projects</small>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="section-spacing alt-bg">
-            <div class="container about-grid">
-                <div class="about-image reveal">
-                    <img src="images/2.jpg" alt="Prerana portrait" class="rounded-[24px] border border-white/10 shadow-[0_30px_60px_rgba(0,0,0,0.22)]" />
+        <section id="about" class="bg-[rgba(9,17,28,0.9)] py-[6rem]">
+            <div class="mx-auto grid w-[min(1200px,calc(100%-32px))] items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
+                <div class="reveal opacity-0 translate-y-[18px] transition duration-700">
+                    <img src="images/2.jpg" alt="Prerana portrait" class="w-full min-h-[490px] rounded-[24px] border border-white/10 object-cover shadow-[0_30px_60px_rgba(0,0,0,0.22)]" />
                 </div>
 
-                <div class="about-copy reveal">
-                    <p class="section-tag">About Me</p>
-                    <h2 class="mt-3 text-4xl font-extrabold tracking-[-0.04em] text-white">Creative developer with a passion for practical, user-focused solutions.</h2>
-                    <p class="mt-4 text-slate-300">
+                <div class="reveal opacity-0 translate-y-[18px] transition duration-700">
+                    <p class="inline-flex items-center gap-2 text-[0.72rem] font-bold uppercase tracking-[0.12em] text-[#8de8ff]">About Me</p>
+                    <h2 class="mt-3 text-[clamp(2rem,3vw,3rem)] font-extrabold tracking-[-0.04em] text-white">Creative developer with a passion for practical, user-focused solutions.</h2>
+                    <p class="mt-4 text-[#b9c4d8]">
                         I am a motivated MCA student specializing in web development and application design. My learning focus includes
                         HTML, CSS, JavaScript, Python, Java, and database technologies. I enjoy turning ideas into interactive and efficient systems
                         while continuously improving my technical skills.
                     </p>
-                    <p class="mt-4 text-slate-300">
+                    <p class="mt-4 text-[#b9c4d8]">
                         I am eager to learn new technologies, contribute effectively in collaborative environments, and work on projects that
                         combine creativity with problem solving.
                     </p>
 
-                    <div class="stat-grid mt-8 grid gap-4 sm:grid-cols-3">
-                        <div class="mini-stat">
-                            <strong>2+</strong>
-                            <span>Projects</span>
+                    <div class="mt-8 grid gap-4 sm:grid-cols-3">
+                        <div class="rounded-[18px] border border-white/10 bg-[rgba(15,23,42,0.65)] p-4 text-center">
+                            <strong class="block text-[1.7rem] font-bold text-white">2+</strong>
+                            <span class="mt-1 block text-[0.88rem] text-[#b9c4d8]">Projects</span>
                         </div>
-                        <div class="mini-stat">
-                            <strong>3</strong>
-                            <span>Certifications</span>
+                        <div class="rounded-[18px] border border-white/10 bg-[rgba(15,23,42,0.65)] p-4 text-center">
+                            <strong class="block text-[1.7rem] font-bold text-white">3</strong>
+                            <span class="mt-1 block text-[0.88rem] text-[#b9c4d8]">Certifications</span>
                         </div>
-                        <div class="mini-stat">
-                            <strong>100%</strong>
-                            <span>Learning mindset</span>
+                        <div class="rounded-[18px] border border-white/10 bg-[rgba(15,23,42,0.65)] p-4 text-center">
+                            <strong class="block text-[1.7rem] font-bold text-white">100%</strong>
+                            <span class="mt-1 block text-[0.88rem] text-[#b9c4d8]">Learning mindset</span>
                         </div>
                     </div>
 
-                    <div class="tab-box mt-8 rounded-2xl border border-white/10 bg-slate-900/50 p-4">
-                        <div class="tab-buttons flex flex-wrap gap-3">
-                            <button class="tab-btn active" data-tab="tab-skills">Skills</button>
-                            <button class="tab-btn" data-tab="tab-experience">Experience</button>
-                            <button class="tab-btn" data-tab="tab-education">Education</button>
+                    <div class="mt-8 rounded-[18px] border border-white/10 bg-[rgba(15,23,42,0.52)] p-4">
+                        <div class="mb-4 flex flex-wrap gap-3">
+                            <button data-tab-button="tab-skills" class="rounded-full border border-[#ff4d8d]/40 bg-[linear-gradient(135deg,rgba(255,77,141,0.18),rgba(255,0,92,0.08))] px-4 py-2 font-semibold text-white transition-all duration-200">Skills</button>
+                            <button data-tab-button="tab-experience" class="rounded-full border border-white/10 bg-transparent px-4 py-2 font-semibold text-[#b9c4d8] transition-all duration-200 hover:text-white">Experience</button>
+                            <button data-tab-button="tab-education" class="rounded-full border border-white/10 bg-transparent px-4 py-2 font-semibold text-[#b9c4d8] transition-all duration-200 hover:text-white">Education</button>
                         </div>
 
-                        <div class="tab-panels mt-4">
-                            <div id="tab-skills" class="tab-panel active">
-                                <ul>
-                                    <li><span>Web Technologies:</span> HTML, CSS, JavaScript, Tailwind</li>
-                                    <li><span>Programming:</span> Java, Python, C</li>
-                                    <li><span>Database:</span> SQL, Database Technologies</li>
-                                    <li><span>Focus:</span> Web Development, UI/UX Thinking</li>
+                        <div>
+                            <div data-tab-panel="tab-skills" class="block">
+                                <ul class="ml-5 list-disc space-y-2 text-[#b9c4d8]">
+                                    <li><span class="font-semibold text-[#ffb0ca]">Web Technologies:</span> HTML, CSS, JavaScript, Tailwind</li>
+                                    <li><span class="font-semibold text-[#ffb0ca]">Programming:</span> Java, Python, C</li>
+                                    <li><span class="font-semibold text-[#ffb0ca]">Database:</span> SQL, Database Technologies</li>
+                                    <li><span class="font-semibold text-[#ffb0ca]">Focus:</span> Web Development, UI/UX Thinking</li>
                                 </ul>
                             </div>
-                            <div id="tab-experience" class="tab-panel">
-                                <ul>
-                                    <li><span>2025 - Present</span><br />Building projects and practicing full-stack web development.</li>
+                            <div data-tab-panel="tab-experience" class="hidden">
+                                <ul class="ml-5 list-disc space-y-2 text-[#b9c4d8]">
+                                    <li><span class="font-semibold text-[#ffb0ca]">2025 - Present</span><br />Building projects and practicing full-stack web development.</li>
                                 </ul>
                             </div>
-                            <div id="tab-education" class="tab-panel">
-                                <ul>
-                                    <li><span>2025</span><br />Master of Computer Applications (MCA), University of Engineering and Management</li>
-                                    <li><span>2022</span><br />BCA, Institute of Computer &amp; Information Sciences, Bankura</li>
+                            <div data-tab-panel="tab-education" class="hidden">
+                                <ul class="ml-5 list-disc space-y-2 text-[#b9c4d8]">
+                                    <li><span class="font-semibold text-[#ffb0ca]">2025</span><br />Master of Computer Applications (MCA), University of Engineering and Management</li>
+                                    <li><span class="font-semibold text-[#ffb0ca]">2022</span><br />BCA, Institute of Computer &amp; Information Sciences, Bankura</li>
                                 </ul>
                             </div>
                         </div>
@@ -166,232 +165,229 @@
             </div>
         </section>
 
-        <section id="skills" class="section-spacing">
-            <div class="container">
-                <div class="heading-row reveal">
-                    <p class="section-tag">Technical Skills</p>
-                    <h2 class="mt-3 text-4xl font-extrabold tracking-[-0.04em] text-white">Tools and technologies I work with.</h2>
+        <section id="skills" class="py-[6rem]">
+            <div class="mx-auto w-[min(1200px,calc(100%-32px))]">
+                <div class="reveal opacity-0 translate-y-[18px] transition duration-700">
+                    <p class="inline-flex items-center gap-2 text-[0.72rem] font-bold uppercase tracking-[0.12em] text-[#8de8ff]">Technical Skills</p>
+                    <h2 class="mt-3 text-[clamp(2rem,3vw,3rem)] font-extrabold tracking-[-0.04em] text-white">Tools and technologies I work with.</h2>
                 </div>
 
-                <div class="skills-grid mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-                    <div class="skill-card reveal">
-                        <i class="fa-brands fa-html5"></i>
-                        <h3>Web Technologies</h3>
-                        <p>HTML, CSS, JavaScript, Tailwind CSS</p>
+                <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+                    <div class="reveal rounded-[22px] border border-white/10 bg-[rgba(15,23,42,0.7)] p-7 shadow-[0_18px_35px_rgba(2,8,23,0.3)] transition-all duration-250 hover:-translate-y-[6px] hover:border-[#ff4d8d]/40 hover:shadow-[0_24px_42px_rgba(255,77,141,0.12)] opacity-0 translate-y-[18px]">
+                        <i class="fa-brands fa-html5 mb-4 block text-4xl text-[#ff4d8d]"></i>
+                        <h3 class="mb-2 text-xl font-semibold text-white">Web Technologies</h3>
+                        <p class="text-[#b9c4d8]">HTML, CSS, JavaScript, Tailwind CSS</p>
                     </div>
-                    <div class="skill-card reveal">
-                        <i class="fa-brands fa-python"></i>
-                        <h3>Programming</h3>
-                        <p>Python, Java, C</p>
+                    <div class="reveal rounded-[22px] border border-white/10 bg-[rgba(15,23,42,0.7)] p-7 shadow-[0_18px_35px_rgba(2,8,23,0.3)] transition-all duration-250 hover:-translate-y-[6px] hover:border-[#ff4d8d]/40 hover:shadow-[0_24px_42px_rgba(255,77,141,0.12)] opacity-0 translate-y-[18px]">
+                        <i class="fa-brands fa-python mb-4 block text-4xl text-[#ff4d8d]"></i>
+                        <h3 class="mb-2 text-xl font-semibold text-white">Programming</h3>
+                        <p class="text-[#b9c4d8]">Python, Java, C</p>
                     </div>
-                    <div class="skill-card reveal">
-                        <i class="fa-solid fa-database"></i>
-                        <h3>Databases</h3>
-                        <p>Database management and backend data handling</p>
+                    <div class="reveal rounded-[22px] border border-white/10 bg-[rgba(15,23,42,0.7)] p-7 shadow-[0_18px_35px_rgba(2,8,23,0.3)] transition-all duration-250 hover:-translate-y-[6px] hover:border-[#ff4d8d]/40 hover:shadow-[0_24px_42px_rgba(255,77,141,0.12)] opacity-0 translate-y-[18px]">
+                        <i class="fa-solid fa-database mb-4 block text-4xl text-[#ff4d8d]"></i>
+                        <h3 class="mb-2 text-xl font-semibold text-white">Databases</h3>
+                        <p class="text-[#b9c4d8]">Database management and backend data handling</p>
                     </div>
-                    <div class="skill-card reveal">
-                        <i class="fa-solid fa-laptop-code"></i>
-                        <h3>Development</h3>
-                        <p>Practical web development, UI thinking, and project building</p>
+                    <div class="reveal rounded-[22px] border border-white/10 bg-[rgba(15,23,42,0.7)] p-7 shadow-[0_18px_35px_rgba(2,8,23,0.3)] transition-all duration-250 hover:-translate-y-[6px] hover:border-[#ff4d8d]/40 hover:shadow-[0_24px_42px_rgba(255,77,141,0.12)] opacity-0 translate-y-[18px]">
+                        <i class="fa-solid fa-laptop-code mb-4 block text-4xl text-[#ff4d8d]"></i>
+                        <h3 class="mb-2 text-xl font-semibold text-white">Development</h3>
+                        <p class="text-[#b9c4d8]">Practical web development, UI thinking, and project building</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="section-spacing alt-bg">
-            <div class="container">
-                <div class="heading-row reveal">
-                    <p class="section-tag">Featured Projects</p>
-                    <h2 class="mt-3 text-4xl font-extrabold tracking-[-0.04em] text-white">Selected work with practical problem solving.</h2>
+        <section id="projects" class="bg-[rgba(9,17,28,0.9)] py-[6rem]">
+            <div class="mx-auto w-[min(1200px,calc(100%-32px))]">
+                <div class="reveal opacity-0 translate-y-[18px] transition duration-700">
+                    <p class="inline-flex items-center gap-2 text-[0.72rem] font-bold uppercase tracking-[0.12em] text-[#8de8ff]">Featured Projects</p>
+                    <h2 class="mt-3 text-[clamp(2rem,3vw,3rem)] font-extrabold tracking-[-0.04em] text-white">Selected work with practical problem solving.</h2>
                 </div>
 
-                <div class="projects-grid mt-10 grid gap-6 lg:grid-cols-3">
-                    <a class="project-card-link reveal" href="https://earnest-kelpie-f76344.netlify.app/" target="_blank" rel="noreferrer">
-                        <article class="project-card">
-                            <div class="project-thumb">
-                                <img src="images/rock_paper_scissors.png" alt="Rock Paper Scissors Game project preview" />
+                <div class="mt-10 grid gap-6 lg:grid-cols-3">
+                    <a class="reveal block h-full opacity-0 translate-y-[18px] transition duration-700" href="https://earnest-kelpie-f76344.netlify.app/" target="_blank" rel="noreferrer">
+                        <article class="flex h-full flex-col overflow-hidden rounded-[26px] border border-white/10 bg-[rgba(15,23,42,0.7)] shadow-[0_18px_35px_rgba(0,0,0,0.2)] transition-all duration-300 hover:-translate-y-2 hover:border-[#ff4d8d]/40 hover:shadow-[0_28px_50px_rgba(255,77,141,0.12)]">
+                            <div class="h-[220px] overflow-hidden bg-slate-800">
+                                <img src="images/rock_paper_scissors.png" alt="Rock Paper Scissors Game project preview" class="h-full w-full object-cover transition duration-300 hover:scale-110" />
                             </div>
-                            <div class="project-body">
-                                <div class="project-header">
-                                    <h3>Rock, Paper, Scissors Game</h3>
-                                    <span>2025</span>
+                            <div class="flex flex-1 flex-col p-5">
+                                <div class="mb-3 flex items-center justify-between gap-4">
+                                    <h3 class="text-xl font-semibold text-white">Rock, Paper, Scissors Game</h3>
+                                    <span class="text-[0.8rem] font-bold uppercase tracking-[0.08em] text-[#8de8ff]">2025</span>
                                 </div>
-                                <p>A simple interactive game built with JavaScript to practice logic, user input, and real-time game interactions.</p>
-                                <div class="tag-list">
-                                    <span>JavaScript</span>
-                                    <span>Game Logic</span>
+                                <p class="text-[#b9c4d8]">A simple interactive game built with JavaScript to practice logic, user input, and real-time game interactions.</p>
+                                <div class="mt-4 flex flex-wrap gap-2">
+                                    <span class="rounded-full border border-white/10 bg-slate-800 px-3 py-1 text-[0.82rem] font-semibold text-[#b9c4d8]">JavaScript</span>
+                                    <span class="rounded-full border border-white/10 bg-slate-800 px-3 py-1 text-[0.82rem] font-semibold text-[#b9c4d8]">Game Logic</span>
                                 </div>
                             </div>
                         </article>
                     </a>
 
-                    <a class="project-card-link reveal" href="https://github.com/Preranabarat/smart-meter-java" target="_blank" rel="noreferrer">
-                        <article class="project-card">
-                            <div class="project-thumb">
-                                <img src="images/smart_meter.png" alt="Smart Meter Using Java project preview" />
+                    <a class="reveal block h-full opacity-0 translate-y-[18px] transition duration-700" href="https://github.com/Preranabarat/smart-meter-java" target="_blank" rel="noreferrer">
+                        <article class="flex h-full flex-col overflow-hidden rounded-[26px] border border-white/10 bg-[rgba(15,23,42,0.7)] shadow-[0_18px_35px_rgba(0,0,0,0.2)] transition-all duration-300 hover:-translate-y-2 hover:border-[#ff4d8d]/40 hover:shadow-[0_28px_50px_rgba(255,77,141,0.12)]">
+                            <div class="h-[220px] overflow-hidden bg-slate-800">
+                                <img src="images/smart_meter.png" alt="Smart Meter Using Java project preview" class="h-full w-full object-cover transition duration-300 hover:scale-110" />
                             </div>
-                            <div class="project-body">
-                                <div class="project-header">
-                                    <h3>Smart Meter Using Java</h3>
-                                    <span>2026</span>
+                            <div class="flex flex-1 flex-col p-5">
+                                <div class="mb-3 flex items-center justify-between gap-4">
+                                    <h3 class="text-xl font-semibold text-white">Smart Meter Using Java</h3>
+                                    <span class="text-[0.8rem] font-bold uppercase tracking-[0.08em] text-[#8de8ff]">2026</span>
                                 </div>
-                                <p>A Java-based project focused on practical programming concepts and meter simulation logic.</p>
-                                <div class="tag-list">
-                                    <span>Java</span>
-                                    <span>OOP</span>
-                                </div>
-                            </div>
-                        </article>
-                    </a>
-
-                    <a class="project-card-link reveal" href="https://github.com/Preranabarat/portfolio-website" target="_blank" rel="noreferrer">
-                        <article class="project-card">
-                            <div class="project-thumb">
-                                <img src="images/portfolio.png" alt="Portfolio Website project preview" />
-                            </div>
-                            <div class="project-body">
-                                <div class="project-header">
-                                    <h3>Portfolio Website</h3>
-                                    <span>2026</span>
-                                </div>
-                                <p>A personal portfolio website designed to showcase skills, projects, and academic experience professionally.</p>
-                                <div class="tag-list">
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>JS</span>
+                                <p class="text-[#b9c4d8]">A Java-based project focused on practical programming concepts and meter simulation logic.</p>
+                                <div class="mt-4 flex flex-wrap gap-2">
+                                    <span class="rounded-full border border-white/10 bg-slate-800 px-3 py-1 text-[0.82rem] font-semibold text-[#b9c4d8]">Java</span>
+                                    <span class="rounded-full border border-white/10 bg-slate-800 px-3 py-1 text-[0.82rem] font-semibold text-[#b9c4d8]">OOP</span>
                                 </div>
                             </div>
                         </article>
                     </a>
+
+                    <a class="reveal block h-full opacity-0 translate-y-[18px] transition duration-700" href="https://github.com/Preranabarat/portfolio-website" target="_blank" rel="noreferrer">
+                        <article class="flex h-full flex-col overflow-hidden rounded-[26px] border border-white/10 bg-[rgba(15,23,42,0.7)] shadow-[0_18px_35px_rgba(0,0,0,0.2)] transition-all duration-300 hover:-translate-y-2 hover:border-[#ff4d8d]/40 hover:shadow-[0_28px_50px_rgba(255,77,141,0.12)]">
+                            <div class="h-[220px] overflow-hidden bg-slate-800">
+                                <img src="images/portfolio.png" alt="Portfolio Website project preview" class="h-full w-full object-cover transition duration-300 hover:scale-110" />
+                            </div>
+                            <div class="flex flex-1 flex-col p-5">
+                                <div class="mb-3 flex items-center justify-between gap-4">
+                                    <h3 class="text-xl font-semibold text-white">Portfolio Website</h3>
+                                    <span class="text-[0.8rem] font-bold uppercase tracking-[0.08em] text-[#8de8ff]">2026</span>
+                                </div>
+                                <p class="text-[#b9c4d8]">A personal portfolio website designed to showcase skills, projects, and academic experience professionally.</p>
+                                <div class="mt-4 flex flex-wrap gap-2">
+                                    <span class="rounded-full border border-white/10 bg-slate-800 px-3 py-1 text-[0.82rem] font-semibold text-[#b9c4d8]">HTML</span>
+                                    <span class="rounded-full border border-white/10 bg-slate-800 px-3 py-1 text-[0.82rem] font-semibold text-[#b9c4d8]">CSS</span>
+                                    <span class="rounded-full border border-white/10 bg-slate-800 px-3 py-1 text-[0.82rem] font-semibold text-[#b9c4d8]">JS</span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <section id="experience" class="section-spacing">
-            <div class="container">
-                <div class="heading-row reveal">
-                    <p class="section-tag">Experience</p>
-                    <h2 class="mt-3 text-4xl font-extrabold tracking-[-0.04em] text-white">Learning through real projects and practice.</h2>
+        <section id="experience" class="py-[6rem]">
+            <div class="mx-auto w-[min(1200px,calc(100%-32px))]">
+                <div class="reveal opacity-0 translate-y-[18px] transition duration-700">
+                    <p class="inline-flex items-center gap-2 text-[0.72rem] font-bold uppercase tracking-[0.12em] text-[#8de8ff]">Experience</p>
+                    <h2 class="mt-3 text-[clamp(2rem,3vw,3rem)] font-extrabold tracking-[-0.04em] text-white">Learning through real projects and practice.</h2>
                 </div>
 
-                <div class="timeline reveal mt-10">
-                    <div class="timeline-item">
-                        <div class="timeline-date">2025 - Present</div>
-                        <div class="timeline-content">
-                            <h3>Web Development Learner</h3>
-                            <p>Building projects and improving frontend skills using HTML, CSS, JavaScript, and responsive design practices.</p>
+                <div class="reveal mt-10 grid gap-5 opacity-0 translate-y-[18px] transition duration-700">
+                    <div class="relative grid gap-6 pl-8 md:grid-cols-[220px_1fr] md:before:absolute md:before:left-[14px] md:before:top-0 md:before:bottom-0 md:before:w-[2px] md:before:bg-white/10 md:before:content-['']">
+                        <div class="relative text-sm font-bold uppercase tracking-[0.02em] text-[#8de8ff] md:pt-2 md:before:absolute md:before:left-[-1.9rem] md:before:top-2 md:before:h-4 md:before:w-4 md:before:rounded-full md:before:bg-gradient-to-r md:before:from-[#ff4d8d] md:before:to-[#ff005c] md:before:shadow-[0_0_0_6px_rgba(255,77,141,0.12)]">2025 - Present</div>
+                        <div class="rounded-[18px] border border-white/10 bg-[rgba(15,23,42,0.7)] p-5">
+                            <h3 class="mb-2 text-xl font-semibold text-white">Web Development Learner</h3>
+                            <p class="text-[#b9c4d8]">Building projects and improving frontend skills using HTML, CSS, JavaScript, and responsive design practices.</p>
                         </div>
                     </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">2026</div>
-                        <div class="timeline-content">
-                            <h3>Java Programming Projects</h3>
-                            <p>Developed Java-based systems and logic-driven applications to strengthen object-oriented programming fundamentals.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section id="education" class="section-spacing alt-bg">
-            <div class="container">
-                <div class="heading-row reveal">
-                    <p class="section-tag">Education</p>
-                    <h2 class="mt-3 text-4xl font-extrabold tracking-[-0.04em] text-white">Academic background.</h2>
-                </div>
-
-                <div class="timeline reveal mt-10">
-                    <div class="timeline-item">
-                        <div class="timeline-date">July 2025 - June 2027</div>
-                        <div class="timeline-content">
-                            <h3>Master of Computer Applications (MCA)</h3>
-                            <p>University of Engineering and Management, Kolkata</p>
-                            <small>CGPA: 7.25 / 10.00</small>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">August 2022 - July 2025</div>
-                        <div class="timeline-content">
-                            <h3>Bachelor of Computer Applications (BCA)</h3>
-                            <p>Institute of Computer &amp; Information Sciences, Bankura</p>
-                            <small>CGPA: 7.31 / 10.00</small>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">2019 - 2021</div>
-                        <div class="timeline-content">
-                            <h3>Higher Secondary and Secondary Education</h3>
-                            <p>Khatra High School, Khatra</p>
-                            <small>Class 12: Percentage 90.8%<br />Class 10: Percentage 62.4%</small>
+                    <div class="relative grid gap-6 pl-8 md:grid-cols-[220px_1fr] md:before:absolute md:before:left-[14px] md:before:top-0 md:before:bottom-0 md:before:w-[2px] md:before:bg-white/10 md:before:content-['']">
+                        <div class="relative text-sm font-bold uppercase tracking-[0.02em] text-[#8de8ff] md:pt-2 md:before:absolute md:before:left-[-1.9rem] md:before:top-2 md:before:h-4 md:before:w-4 md:before:rounded-full md:before:bg-gradient-to-r md:before:from-[#ff4d8d] md:before:to-[#ff005c] md:before:shadow-[0_0_0_6px_rgba(255,77,141,0.12)]">2026</div>
+                        <div class="rounded-[18px] border border-white/10 bg-[rgba(15,23,42,0.7)] p-5">
+                            <h3 class="mb-2 text-xl font-semibold text-white">Java Programming Projects</h3>
+                            <p class="text-[#b9c4d8]">Developed Java-based systems and logic-driven applications to strengthen object-oriented programming fundamentals.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section-spacing" id="certifications">
-            <div class="container">
-                <div class="heading-row reveal">
-                    <p class="section-tag">Certifications</p>
-                    <h2 class="mt-3 text-4xl font-extrabold tracking-[-0.04em] text-white">Professional learning highlights.</h2>
+        <section id="education" class="bg-[rgba(9,17,28,0.9)] py-[6rem]">
+            <div class="mx-auto w-[min(1200px,calc(100%-32px))]">
+                <div class="reveal opacity-0 translate-y-[18px] transition duration-700">
+                    <p class="inline-flex items-center gap-2 text-[0.72rem] font-bold uppercase tracking-[0.12em] text-[#8de8ff]">Education</p>
+                    <h2 class="mt-3 text-[clamp(2rem,3vw,3rem)] font-extrabold tracking-[-0.04em] text-white">Academic background.</h2>
                 </div>
 
-                <div class="cert-grid reveal mt-10 grid gap-5 md:grid-cols-3">
-                    <div class="certificate-card">
-                        <div>
-                            <img src="images/coursera_certificate.jpeg" alt="Cyber Security Fundamentals Certificate" class="certificate-image" />
-                        </div>
-                        <div class="certificate-content">
-                            <h3>Cyber Security Fundamentals</h3>
-                            <span>Course</span>
-                        </div>
-                    </div>
-
-                    <div class="certificate-card">
-                        <div>
-                            <img src="images/java.png" alt="Programming in Java Certificate" class="certificate-image" />
-                        </div>
-                        <div class="certificate-content">
-                            <h3>Programming in Java</h3>
-                            <span>NPTEL</span>
+                <div class="reveal mt-10 grid gap-5 opacity-0 translate-y-[18px] transition duration-700">
+                    <div class="relative grid gap-6 pl-8 md:grid-cols-[220px_1fr] md:before:absolute md:before:left-[14px] md:before:top-0 md:before:bottom-0 md:before:w-[2px] md:before:bg-white/10 md:before:content-['']">
+                        <div class="relative text-sm font-bold uppercase tracking-[0.02em] text-[#8de8ff] md:pt-2 md:before:absolute md:before:left-[-1.9rem] md:before:top-2 md:before:h-4 md:before:w-4 md:before:rounded-full md:before:bg-gradient-to-r md:before:from-[#ff4d8d] md:before:to-[#ff005c] md:before:shadow-[0_0_0_6px_rgba(255,77,141,0.12)]">July 2025 - June 2027</div>
+                        <div class="rounded-[18px] border border-white/10 bg-[rgba(15,23,42,0.7)] p-5">
+                            <h3 class="mb-2 text-xl font-semibold text-white">Master of Computer Applications (MCA)</h3>
+                            <p class="text-[#b9c4d8]">University of Engineering and Management, Kolkata</p>
+                            <small class="mt-2 block text-[#b9c4d8]">CGPA: 7.25 / 10.00</small>
                         </div>
                     </div>
 
-                    <div class="certificate-card">
-                        <div>
-                            <img src="images/soft_skill.png" alt="Soft Skill Development Certificate" class="certificate-image" />
+                    <div class="relative grid gap-6 pl-8 md:grid-cols-[220px_1fr] md:before:absolute md:before:left-[14px] md:before:top-0 md:before:bottom-0 md:before:w-[2px] md:before:bg-white/10 md:before:content-['']">
+                        <div class="relative text-sm font-bold uppercase tracking-[0.02em] text-[#8de8ff] md:pt-2 md:before:absolute md:before:left-[-1.9rem] md:before:top-2 md:before:h-4 md:before:w-4 md:before:rounded-full md:before:bg-gradient-to-r md:before:from-[#ff4d8d] md:before:to-[#ff005c] md:before:shadow-[0_0_0_6px_rgba(255,77,141,0.12)]">August 2022 - July 2025</div>
+                        <div class="rounded-[18px] border border-white/10 bg-[rgba(15,23,42,0.7)] p-5">
+                            <h3 class="mb-2 text-xl font-semibold text-white">Bachelor of Computer Applications (BCA)</h3>
+                            <p class="text-[#b9c4d8]">Institute of Computer &amp; Information Sciences, Bankura</p>
+                            <small class="mt-2 block text-[#b9c4d8]">CGPA: 7.31 / 10.00</small>
                         </div>
-                        <div class="certificate-content">
-                            <h3>Soft Skill Development</h3>
-                            <span>NPTEL</span>
+                    </div>
+
+                    <div class="relative grid gap-6 pl-8 md:grid-cols-[220px_1fr] md:before:absolute md:before:left-[14px] md:before:top-0 md:before:bottom-0 md:before:w-[2px] md:before:bg-white/10 md:before:content-['']">
+                        <div class="relative text-sm font-bold uppercase tracking-[0.02em] text-[#8de8ff] md:pt-2 md:before:absolute md:before:left-[-1.9rem] md:before:top-2 md:before:h-4 md:before:w-4 md:before:rounded-full md:before:bg-gradient-to-r md:before:from-[#ff4d8d] md:before:to-[#ff005c] md:before:shadow-[0_0_0_6px_rgba(255,77,141,0.12)]">2019 - 2021</div>
+                        <div class="rounded-[18px] border border-white/10 bg-[rgba(15,23,42,0.7)] p-5">
+                            <h3 class="mb-2 text-xl font-semibold text-white">Higher Secondary and Secondary Education</h3>
+                            <p class="text-[#b9c4d8]">Khatra High School, Khatra</p>
+                            <small class="mt-2 block text-[#b9c4d8]">Class 12: Percentage 90.8%<br />Class 10: Percentage 62.4%</small>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="section-spacing contact-section">
-            <div class="container contact-box reveal">
+        <section id="certifications" class="py-[6rem]">
+            <div class="mx-auto w-[min(1200px,calc(100%-32px))]">
+                <div class="reveal opacity-0 translate-y-[18px] transition duration-700">
+                    <p class="inline-flex items-center gap-2 text-[0.72rem] font-bold uppercase tracking-[0.12em] text-[#8de8ff]">Certifications</p>
+                    <h2 class="mt-3 text-[clamp(2rem,3vw,3rem)] font-extrabold tracking-[-0.04em] text-white">Professional learning highlights.</h2>
+                </div>
+
+                <div class="reveal mt-10 grid gap-5 md:grid-cols-3 opacity-0 translate-y-[18px] transition duration-700">
+                    <div class="overflow-hidden rounded-[22px] border border-white/10 bg-[rgba(15,23,42,0.7)] shadow-[0_16px_30px_rgba(0,0,0,0.18)] transition-all duration-300 hover:-translate-y-1 hover:border-[#8de8ff]/30 hover:shadow-[0_24px_40px_rgba(141,232,255,0.12)]">
+                        <img src="images/coursera_certificate.jpeg" alt="Cyber Security Fundamentals Certificate" class="block h-[220px] w-full object-cover transition duration-300 hover:scale-105" />
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-white">Cyber Security Fundamentals</h3>
+                            <span class="mt-2 block text-[0.8rem] font-bold uppercase tracking-[0.08em] text-[#8de8ff]">Course</span>
+                        </div>
+                    </div>
+
+                    <div class="overflow-hidden rounded-[22px] border border-white/10 bg-[rgba(15,23,42,0.7)] shadow-[0_16px_30px_rgba(0,0,0,0.18)] transition-all duration-300 hover:-translate-y-1 hover:border-[#8de8ff]/30 hover:shadow-[0_24px_40px_rgba(141,232,255,0.12)]">
+                        <img src="images/java.png" alt="Programming in Java Certificate" class="block h-[220px] w-full object-cover transition duration-300 hover:scale-105" />
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-white">Programming in Java</h3>
+                            <span class="mt-2 block text-[0.8rem] font-bold uppercase tracking-[0.08em] text-[#8de8ff]">NPTEL</span>
+                        </div>
+                    </div>
+
+                    <div class="overflow-hidden rounded-[22px] border border-white/10 bg-[rgba(15,23,42,0.7)] shadow-[0_16px_30px_rgba(0,0,0,0.18)] transition-all duration-300 hover:-translate-y-1 hover:border-[#8de8ff]/30 hover:shadow-[0_24px_40px_rgba(141,232,255,0.12)]">
+                        <img src="images/soft_skill.png" alt="Soft Skill Development Certificate" class="block h-[220px] w-full object-cover transition duration-300 hover:scale-105" />
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-white">Soft Skill Development</h3>
+                            <span class="mt-2 block text-[0.8rem] font-bold uppercase tracking-[0.08em] text-[#8de8ff]">NPTEL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="pb-20 pt-12">
+            <div class="reveal mx-auto grid w-[min(1200px,calc(100%-32px))] max-w-6xl gap-8 rounded-[28px] border border-white/10 bg-gradient-to-r from-[#ff4d8d]/10 to-[#0a111c]/80 p-8 opacity-0 translate-y-[18px] transition duration-700 lg:grid-cols-[1.1fr_0.9fr]">
                 <div>
-                    <p class="section-tag">Let’s Connect</p>
-                    <h2 class="mt-3 text-4xl font-extrabold tracking-[-0.04em] text-white">Open to learning, collaboration, and growth.</h2>
-                    <p class="mt-4 text-slate-300">
+                    <p class="inline-flex items-center gap-2 text-[0.72rem] font-bold uppercase tracking-[0.12em] text-[#8de8ff]">Let’s Connect</p>
+                    <h2 class="mt-3 text-[clamp(2rem,3vw,3rem)] font-extrabold tracking-[-0.04em] text-white">Open to learning, collaboration, and growth.</h2>
+                    <p class="mt-4 text-[#b9c4d8]">
                         Freshers seeking an entry-level Web Developer opportunity. Willing to learn new technologies and contribute effectively in a collaborative professional environment.
                     </p>
                 </div>
 
-                <div class="contact-list">
-                    <a href="mailto:preranabarat2004@gmail.com"><i class="fa-solid fa-envelope"></i> preranabarat2004@gmail.com</a>
-                    <a href="tel:+91810820621"><i class="fa-solid fa-phone"></i> +91 7810820621</a>
-                    <a href="https://www.linkedin.com" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
-                    <a href="https://github.com" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+                <div class="grid content-center gap-3">
+                    <a href="mailto:preranabarat2004@gmail.com" class="flex items-center gap-3 rounded-[16px] border border-white/10 bg-[rgba(15,23,42,0.6)] px-4 py-3 text-white transition-all duration-250 hover:-translate-y-[2px] hover:border-[#ff4d8d]/50"><i class="fa-solid fa-envelope"></i> preranabarat2004@gmail.com</a>
+                    <a href="tel:+91810820621" class="flex items-center gap-3 rounded-[16px] border border-white/10 bg-[rgba(15,23,42,0.6)] px-4 py-3 text-white transition-all duration-250 hover:-translate-y-[2px] hover:border-[#ff4d8d]/50"><i class="fa-solid fa-phone"></i> +91 7810820621</a>
+                    <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" class="flex items-center gap-3 rounded-[16px] border border-white/10 bg-[rgba(15,23,42,0.6)] px-4 py-3 text-white transition-all duration-250 hover:-translate-y-[2px] hover:border-[#ff4d8d]/50"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+                    <a href="https://github.com" target="_blank" rel="noreferrer" class="flex items-center gap-3 rounded-[16px] border border-white/10 bg-[rgba(15,23,42,0.6)] px-4 py-3 text-white transition-all duration-250 hover:-translate-y-[2px] hover:border-[#ff4d8d]/50"><i class="fa-brands fa-github"></i> GitHub</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="site-footer">
-        <div class="container footer-inner">
+    <footer class="border-t border-white/10 py-6 text-[#b9c4d8]">
+        <div class="mx-auto w-[min(1200px,calc(100%-32px))] text-center">
             <p>© <span id="year"></span> Prerana Barat. All rights reserved.</p>
         </div>
     </footer>
