@@ -1,24 +1,40 @@
-const tablinks = document.getElementsByClassName("tab-links");
-const tabcontents = document.getElementsByClassName("tab-contents");
+const menuToggle = document.querySelector('.menu-toggle');
+const siteNav = document.querySelector('.site-nav');
 
-function opentab(tabname, event) {
-    Array.from(tablinks).forEach((tablink) => {
-        tablink.classList.remove("active-link", "text-white");
-        tablink.classList.add("text-slate-400");
-        tablink.querySelector("::after")?.classList?.remove?.("w-full");
+if (menuToggle && siteNav) {
+    menuToggle.addEventListener('click', () => {
+        siteNav.classList.toggle('active');
     });
 
-    Array.from(tabcontents).forEach((tabcontent) => {
-        tabcontent.classList.add("hidden");
-        tabcontent.classList.remove("block");
+    siteNav.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => siteNav.classList.remove('active'));
     });
-
-    event.currentTarget.classList.add("active-link", "text-white");
-    event.currentTarget.classList.remove("text-slate-400");
-
-    const activeTab = document.getElementById(tabname);
-    if (activeTab) {
-        activeTab.classList.remove("hidden");
-        activeTab.classList.add("block");
-    }
 }
+
+const tabButtons = document.querySelectorAll('.tab-btn');
+const tabPanels = document.querySelectorAll('.tab-panel');
+
+for (const tabButton of tabButtons) {
+    tabButton.addEventListener('click', () => {
+        const target = tabButton.dataset.tab;
+
+        tabButtons.forEach((button) => button.classList.toggle('active', button === tabButton));
+        tabPanels.forEach((panel) => {
+            panel.classList.toggle('active', panel.id === target);
+        });
+    });
+}
+
+const revealItems = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.1 });
+
+revealItems.forEach((item) => observer.observe(item));
+
+document.getElementById('year').textContent = new Date().getFullYear();
