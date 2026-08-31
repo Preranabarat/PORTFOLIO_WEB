@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prerana Barat | Portfolio</title>
     <meta name="description" content="Portfolio website for Prerana Barat, a software developer with skills in web development, Python, Java, and database technologies." />
+    <script>
+        tailwind = {
+            config: {
+                theme: {
+                    extend: {
+                        colors: {
+                            night: '#07111f',
+                            panel: '#0f172a',
+                            accentPink: '#ff4d8d',
+                            accentPinkStrong: '#ff005c',
+                            accentSky: '#8de8ff',
+                            rail: '#b9c4d8'
+                        }
+                    }
+                }
+            }
+        };
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,9 +30,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-pink-400/30">
     <header class="site-header">
-        <div class="container nav-wrap">
+        <div class="nav-wrap">
             <a href="#home" class="brand">P<span>B</span></a>
             <button class="menu-toggle" aria-label="Toggle navigation">
                 <span></span>
@@ -35,23 +53,23 @@
     <main id="home">
         <section class="hero section-spacing">
             <div class="container hero-grid">
-                <div class="hero-copy reveal">
+                <div class="reveal">
                     <p class="eyebrow">Software Developer</p>
-                    <h1>
-                        Hi, I'm <span>Prerana Barat</span><br />
+                    <h1 class="mt-4 text-4xl font-extrabold leading-none tracking-[-0.04em] sm:text-5xl lg:text-7xl">
+                        Hi, I'm <span class="text-accentPink">Prerana Barat</span><br />
                         from Kolkata, India.
                     </h1>
-                    <p class="lead">
+                    <p class="lead mt-6 max-w-2xl text-base text-slate-300">
                         Final-year Master of Computer Applications (MCA) student with a strong foundation in web technologies,
                         programming, and problem solving. I build clean, responsive, and practical digital experiences with a focus on user value.
                     </p>
 
-                    <div class="cta-row">
+                    <div class="cta-row mt-8 flex flex-wrap gap-4">
                         <a href="#projects" class="btn btn-primary">View Projects</a>
                         <a href="mailto:preranabarat2004@gmail.com" class="btn btn-secondary">Hire Me</a>
                     </div>
 
-                    <div class="tech-stack-row">
+                    <div class="tech-stack-row mt-8 flex flex-wrap gap-3">
                         <span class="skill-tag">HTML</span>
                         <span class="skill-tag">CSS</span>
                         <span class="skill-tag">JavaScript</span>
@@ -59,7 +77,7 @@
                         <span class="skill-tag">Java</span>
                     </div>
 
-                    <ul class="social-list">
+                    <ul class="social-list mt-8 flex items-center gap-3">
                         <li><a href="https://www.linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
                         <li><a href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
                         <li><a href="mailto:preranabarat2004@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></li>
@@ -73,8 +91,8 @@
                     <div class="status-card">
                         <div class="status-dot"></div>
                         <div>
-                            <strong>Available for work</strong>
-                            <small>Web Development & Python Projects</small>
+                            <strong class="text-white">Available for work</strong>
+                            <small>Web Development &amp; Python Projects</small>
                         </div>
                     </div>
                 </div>
@@ -84,23 +102,23 @@
         <section id="about" class="section-spacing alt-bg">
             <div class="container about-grid">
                 <div class="about-image reveal">
-                    <img src="images/2.jpg" alt="Prerana portrait" />
+                    <img src="images/2.jpg" alt="Prerana portrait" class="rounded-[24px] border border-white/10 shadow-[0_30px_60px_rgba(0,0,0,0.22)]" />
                 </div>
 
                 <div class="about-copy reveal">
                     <p class="section-tag">About Me</p>
-                    <h2>Creative developer with a passion for practical, user-focused solutions.</h2>
-                    <p>
+                    <h2 class="mt-3 text-4xl font-extrabold tracking-[-0.04em] text-white">Creative developer with a passion for practical, user-focused solutions.</h2>
+                    <p class="mt-4 text-slate-300">
                         I am a motivated MCA student specializing in web development and application design. My learning focus includes
                         HTML, CSS, JavaScript, Python, Java, and database technologies. I enjoy turning ideas into interactive and efficient systems
                         while continuously improving my technical skills.
                     </p>
-                    <p>
+                    <p class="mt-4 text-slate-300">
                         I am eager to learn new technologies, contribute effectively in collaborative environments, and work on projects that
                         combine creativity with problem solving.
                     </p>
 
-                    <div class="stat-grid">
+                    <div class="stat-grid mt-8 grid gap-4 sm:grid-cols-3">
                         <div class="mini-stat">
                             <strong>2+</strong>
                             <span>Projects</span>
@@ -115,14 +133,14 @@
                         </div>
                     </div>
 
-                    <div class="tab-box">
-                        <div class="tab-buttons">
+                    <div class="tab-box mt-8 rounded-2xl border border-white/10 bg-slate-900/50 p-4">
+                        <div class="tab-buttons flex flex-wrap gap-3">
                             <button class="tab-btn active" data-tab="tab-skills">Skills</button>
                             <button class="tab-btn" data-tab="tab-experience">Experience</button>
                             <button class="tab-btn" data-tab="tab-education">Education</button>
                         </div>
 
-                        <div class="tab-panels">
+                        <div class="tab-panels mt-4">
                             <div id="tab-skills" class="tab-panel active">
                                 <ul>
                                     <li><span>Web Technologies:</span> HTML, CSS, JavaScript, Tailwind</li>
@@ -152,10 +170,10 @@
             <div class="container">
                 <div class="heading-row reveal">
                     <p class="section-tag">Technical Skills</p>
-                    <h2>Tools and technologies I work with.</h2>
+                    <h2 class="mt-3 text-4xl font-extrabold tracking-[-0.04em] text-white">Tools and technologies I work with.</h2>
                 </div>
 
-                <div class="skills-grid">
+                <div class="skills-grid mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
                     <div class="skill-card reveal">
                         <i class="fa-brands fa-html5"></i>
                         <h3>Web Technologies</h3>
@@ -184,10 +202,10 @@
             <div class="container">
                 <div class="heading-row reveal">
                     <p class="section-tag">Featured Projects</p>
-                    <h2>Selected work with practical problem solving.</h2>
+                    <h2 class="mt-3 text-4xl font-extrabold tracking-[-0.04em] text-white">Selected work with practical problem solving.</h2>
                 </div>
 
-                <div class="projects-grid">
+                <div class="projects-grid mt-10 grid gap-6 lg:grid-cols-3">
                     <a class="project-card-link reveal" href="https://earnest-kelpie-f76344.netlify.app/" target="_blank" rel="noreferrer">
                         <article class="project-card">
                             <div class="project-thumb">
@@ -253,10 +271,10 @@
             <div class="container">
                 <div class="heading-row reveal">
                     <p class="section-tag">Experience</p>
-                    <h2>Learning through real projects and practice.</h2>
+                    <h2 class="mt-3 text-4xl font-extrabold tracking-[-0.04em] text-white">Learning through real projects and practice.</h2>
                 </div>
 
-                <div class="timeline reveal">
+                <div class="timeline reveal mt-10">
                     <div class="timeline-item">
                         <div class="timeline-date">2025 - Present</div>
                         <div class="timeline-content">
@@ -279,10 +297,10 @@
             <div class="container">
                 <div class="heading-row reveal">
                     <p class="section-tag">Education</p>
-                    <h2>Academic background.</h2>
+                    <h2 class="mt-3 text-4xl font-extrabold tracking-[-0.04em] text-white">Academic background.</h2>
                 </div>
 
-                <div class="timeline reveal">
+                <div class="timeline reveal mt-10">
                     <div class="timeline-item">
                         <div class="timeline-date">July 2025 - June 2027</div>
                         <div class="timeline-content">
@@ -315,11 +333,14 @@
             <div class="container">
                 <div class="heading-row reveal">
                     <p class="section-tag">Certifications</p>
-                    <h2>Professional learning highlights.</h2>
+                    <h2 class="mt-3 text-4xl font-extrabold tracking-[-0.04em] text-white">Professional learning highlights.</h2>
                 </div>
 
-                <div class="cert-grid reveal">
+                <div class="cert-grid reveal mt-10 grid gap-5 md:grid-cols-3">
                     <div class="certificate-card">
+                        <div>
+                            <img src="images/coursera_certificate.jpeg" alt="Cyber Security Fundamentals Certificate" class="certificate-image" />
+                        </div>
                         <div class="certificate-content">
                             <h3>Cyber Security Fundamentals</h3>
                             <span>Course</span>
@@ -327,6 +348,9 @@
                     </div>
 
                     <div class="certificate-card">
+                        <div>
+                            <img src="images/java.png" alt="Programming in Java Certificate" class="certificate-image" />
+                        </div>
                         <div class="certificate-content">
                             <h3>Programming in Java</h3>
                             <span>NPTEL</span>
@@ -334,6 +358,9 @@
                     </div>
 
                     <div class="certificate-card">
+                        <div>
+                            <img src="images/soft_skill.png" alt="Soft Skill Development Certificate" class="certificate-image" />
+                        </div>
                         <div class="certificate-content">
                             <h3>Soft Skill Development</h3>
                             <span>NPTEL</span>
@@ -347,8 +374,8 @@
             <div class="container contact-box reveal">
                 <div>
                     <p class="section-tag">Let’s Connect</p>
-                    <h2>Open to learning, collaboration, and growth.</h2>
-                    <p>
+                    <h2 class="mt-3 text-4xl font-extrabold tracking-[-0.04em] text-white">Open to learning, collaboration, and growth.</h2>
+                    <p class="mt-4 text-slate-300">
                         Freshers seeking an entry-level Web Developer opportunity. Willing to learn new technologies and contribute effectively in a collaborative professional environment.
                     </p>
                 </div>
